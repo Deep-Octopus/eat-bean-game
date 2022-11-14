@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'iconfont';  /* Project id 3224694 */
+    src: url('//at.alicdn.com/t/font_3224694_prj4zjrqyaa.woff2?t=1648956139338') format('woff2'),
+    url('//at.alicdn.com/t/font_3224694_prj4zjrqyaa.woff?t=1648956139338') format('woff'),
+    url('//at.alicdn.com/t/font_3224694_prj4zjrqyaa.ttf?t=1648956139338') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #AEDD81;
+}
+.div{
+    display: block;
+}
+.mouth{
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+    background-color: #AEDD81;
+    border-radius: 100px 100px 100px 100px;
+    box-shadow:
+            300px 0 0 -80px pink,
+            450px 0 0 -80px pink ,
+            600px 0 0 -80px pink,
+            750px 0 0 -80px pink,
+            900px 0 0 -80px pink,
+            1050px 0 0 -80px pink ,
+            1200px 0 0 -80px pink,
+            1350px 0 0 -80px pink;
+    animation: peas 2s infinite;
+
+}
+.eye{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    float: right;
+    margin-right: 90px;
+    margin-top: 20px;
+    border-radius: 30px 30px 30px 30px;
+}
+.top,.button{
+    width: 200px;
+    height: 100px;
+    background-color: #00CCFF;
+    margin-left: 150px;
+}
+.top{
+    border-radius: 100px 100px 0 0;
+    transform: rotate(30deg);
+    animation: top-mouth 2s infinite;
+}
+.button{
+    border-radius: 0 0 100px 100px;
+    transform: rotate(-30deg);
+    animation: button-mouth 2s infinite;
+}
+@keyframes top-mouth {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes button-mouth {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes peas {
+    0%{
+        box-shadow:
+                300px 0 0 -80px pink,
+                450px 0 0 -80px pink ,
+                600px 0 0 -80px pink,
+                750px 0 0 -80px pink,
+                900px 0 0 -80px pink,
+                1050px 0 0 -80px pink,
+                1200px 0 0 -80px pink,
+                1350px 0 0 -80px pink,
+                1500px 0 0 -80px pink;
+    }
+    100%{
+        box-shadow:
+                150px 0 0 -80px darkorange,
+                300px 0 0 -80px pink ,
+                450px 0 0 -80px pink,
+                600px 0 0 -80px pink,
+                750px 0 0 -80px pink,
+                900px 0 0 -80px pink ,
+                1050px 0 0 -80px pink,
+                1200px 0 0 -80px pink,
+                1350px 0 0 -80px pink;
+
+    }
+
+}
